@@ -40,6 +40,6 @@ oom_x <- oom(x)
 round(x, oom_x)
 }
 \seealso{
-Other rounding functions: \code{\link{format_oom}},
+Other rounding functions: \code{\link{mpformat}},
   \code{\link{round_up}}
 }

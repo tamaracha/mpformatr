@@ -29,6 +29,6 @@ round_up(x) # 1235
 http://theobligatescientist.blogspot.de/2010/02/r-i-still-love-you-but-i-hate-your.html
 }
 \seealso{
-Other rounding functions: \code{\link{format_oom}},
+Other rounding functions: \code{\link{mpformat}},
   \code{\link{oom}}
 }

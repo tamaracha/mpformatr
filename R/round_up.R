@@ -15,6 +15,7 @@
 #' @family rounding functions
 #' @export
 round_up <- function(x, n = 0) {
+  stopifnot(is.numeric(x), is.numeric(n))
   scale <- 10 ^ n
   trunc(x * scale + sign(x) * 0.5) / scale
 }

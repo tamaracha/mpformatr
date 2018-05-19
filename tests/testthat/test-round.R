@@ -29,13 +29,17 @@ test_that("oom works", {
   expect_equal(oom(cases$se), cases$oom)
   for (i in 1:nrow(cases)) {
     expect_match(
-      format_oom(!!cases[[i, "se"]], !!cases[[i, "oom"]]),
+      mpformat(cases[[i, "se"]], cases[[i, "oom"]]),
+      cases[[i, "se_exp"]]
+    )
+    expect_match(
+      mpformat(cases[[i, "se"]]),
       cases[[i, "se_exp"]]
     )
   }
   for (i in 1:nrow(cases)) {
     expect_match(
-      format_oom(!!cases[[i, "center"]], !!cases[[i, "oom"]]),
+      mpformat(cases[[i, "center"]], cases[[i, "oom"]]),
       cases[[i, "center_exp"]]
     )
   }

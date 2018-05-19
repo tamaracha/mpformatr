@@ -3,11 +3,11 @@
 #' This rounds numbers and fills up places with zeros according to the given order of magnitude.
 #'
 #' @param x A numeric.
-#' @param oom A numeric.
+#' @param digits A numeric.
 #' @return A character
 #' @family rounding functions
 #' @export
-format_oom <- function(x, oom) {
-  x <- round_up(x, oom)
-  ifelse(sign(oom) == -1, format(x), format(x, nsmall = abs(oom)))
+mpformat <- function(x, digits = oom(x)) {
+  x <- round_up(x, digits)
+  ifelse(sign(digits) == -1, format(x), format(x, nsmall = abs(digits)))
 }
