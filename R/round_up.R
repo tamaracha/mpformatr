@@ -12,6 +12,7 @@
 #' x <- 1234.5
 #' round(x) # 1234
 #' round_up(x) # 1235
+#' @family rounding functions
 #' @export
 round_up <- function(x, n = 0) {
   scale <- 10 ^ n
