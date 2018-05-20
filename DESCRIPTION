@@ -11,3 +11,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
 Suggests: 
     testthat
+URL: https://github.com/tamaracha/mpformatr
+BugReports: https://github.com/tamaracha/mpformatr/issues
